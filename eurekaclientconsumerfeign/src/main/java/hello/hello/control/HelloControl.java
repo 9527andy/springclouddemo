@@ -1,19 +1,18 @@
-package hello.control;
+package hello.hello.control;
 
+import hello.hello.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 @RestController
-public class HelloController {
-
+public class HelloControl {
     @Autowired
-    private RestTemplate restTemplate;
+    HelloService helloService;
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String hello() {
-        return restTemplate.getForEntity("http://SERVICE-HELLO/hello", String.class).getBody();
+        return helloService.hello();
     }
 }

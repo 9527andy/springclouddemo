@@ -18,6 +18,7 @@
         <module>eurekaservice7002</module>
         <module>eurekaservice7003</module>
         <module>eurekaclientconsumer80</module>
+        <module>eurekaclientconsumerfeign</module>
     </modules>
 
     <build>
