@@ -4,15 +4,14 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
-import org.springframework.context.annotation.ComponentScan;
 
 @EnableDiscoveryClient
 @SpringBootApplication
 @EnableFeignClients
-public class EurekaClientConsumerFeignApplication {
+public class EurekaClientConsumerFeign80Application {
 
 
     public static void main(String[] args) {
-        SpringApplication.run(EurekaClientConsumerFeignApplication.class,args);
+        SpringApplication.run(EurekaClientConsumerFeign80Application.class,args);
     }
 }

@@ -19,6 +19,7 @@
         <module>eurekaservice7003</module>
         <module>eurekaclientconsumer80</module>
         <module>eurekaclientconsumerfeign</module>
+        <module>eurekaclienthystrix8001</module>
     </modules>
 
     <build>
